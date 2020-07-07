@@ -46,7 +46,7 @@ Lycanroc with a quiet nature.
 
 If you want to see what's being generated:
 
-```
+```clojure
 ({:habitat nil,
   :anatomy :ball,
   :color :brown,
