@@ -3,11 +3,17 @@
 Pokégen is a Pokémon generation library, designed to show an example of
 what Disultory can do.
 
-Pokégen is currently a WIP, so it doesn't do very much.
-
 ## Usage
 
-TBC.
+To generate a team with very basic descriptions (this is very much still
+a WIP:
+
+```
+$ lein run
+$ lein run n
+```
+
+Runtimes can be long, it calls an external API for all data lookups.
 
 ## Special Thanks
 
