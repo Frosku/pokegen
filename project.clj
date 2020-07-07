@@ -6,6 +6,7 @@
   :license {:name "The Unlicense"
             :url "https://www."}
   :dependencies [[org.clojure/clojure "1.10.1"]
+                 [org.clojure/tools.cli "1.0.194"]
                  [com.frosku/disultory "0.1.4"]
                  [cheshire "5.10.0"]
                  [clj-http "3.10.1"]]
