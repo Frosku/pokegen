@@ -24,7 +24,7 @@
 
 (defn exec
   ([] (exec 6))
-  ([n] (->> (random-team (int n))
+  ([n] (->> (random-team (Integer/parseInt n))
             (pd/describe-team))))
 
 (defn -main

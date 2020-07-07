@@ -9,7 +9,7 @@
   [pokemon]
   (format "a level %s %s %s with a %s nature"
           (:level pokemon)
-          (name (:gender pokemon))
+          (if (nil? (:gender pokemon)) "" (name (:gender pokemon)))
           (:human-readable-species pokemon)
           (name (:nature pokemon))))
 
