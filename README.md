@@ -6,7 +6,7 @@ what Disultory can do.
 ## Usage
 
 To generate a team with very basic descriptions (this is very much still
-a WIP:
+a WIP) -- optional n as team size (default 6):
 
 ```
 $ lein run
