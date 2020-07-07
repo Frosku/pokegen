@@ -44,9 +44,11 @@ female Togedemaru with a lonely nature, a level
 Lycanroc with a quiet nature.
 ```
 
-If you want to see what's being generated:
+If you want to see what's being generated, pass the `--debug`
+argument to the command line interface:
 
 ```clojure
+❯ lein run --pokemon 2 --debug
 ({:habitat nil,
   :anatomy :ball,
   :color :brown,
