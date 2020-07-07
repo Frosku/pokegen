@@ -190,3 +190,27 @@
   (let [pre-evolved (:evolves_from_species
                      (lookup-pokemon-species-by-name name))]
     (if (= nil pre-evolved) nil (:name pre-evolved))))
+
+(defn display-name
+  "Returns the display name for the Pokemon, in English.
+
+   (display-name \"vaporeon\")
+   => \"Vaporeon\""
+  [name]
+  (->> name
+       (lookup-pokemon-species-by-name)
+       (:names)
+       (filterv #(= "en" (:name (:language %))))
+       (first)
+       (:name)))
+
+(defn egg-groups
+  "Returns the egg groups for the Pokemon.
+
+   (egg-group \"vaporeon\")
+   => [:ground]"
+  [name]
+  (->> name
+       (lookup-pokemon-species-by-name)
+       (:egg_groups)
+       (mapv #(keyword (:name %)))))

@@ -57,7 +57,9 @@
                          :shape {:name "quadruped"}
                          :is_baby false
                          :color {:name "blue"}
-                         :evolves_from_species {:name "eevee"}}))
+                         :evolves_from_species {:name "eevee"}
+                         :egg_groups [{:name "ground"}]
+                         :names [{:language {:name "en"} :name "Vaporeon"}]}))
 
 (defn vaporeon-species-route-res [_]
   {:status 200
@@ -124,4 +126,6 @@
       (is (= :blue (color "vaporeon")))
       (is (= false (baby? "vaporeon")))
       (is (= :quadruped (anatomy "vaporeon")))
-      (is (= "eevee" (pre-evolved-form "vaporeon"))))))
+      (is (= "eevee" (pre-evolved-form "vaporeon")))
+      (is (= "Vaporeon" (display-name "vaporeon")))
+      (is (= [:ground] (egg-groups "vaporeon"))))))

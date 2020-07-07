@@ -12,6 +12,8 @@
   :repl-options {:init-ns pokegen.core}
   :source-paths ["src"]
   :test-paths ["t"]
+  :main pokegen.core
+  :aot :all
   :target-path "target/%s/"
   :compile-path "%s/classes"
   :plugins [[lein-bump-version "0.1.6"]]
